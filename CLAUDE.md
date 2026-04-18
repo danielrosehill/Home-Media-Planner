@@ -1,62 +1,26 @@
 # CLAUDE.md
 
-This file provides instructions for AI agents working on this project.
+## Repo purpose
 
-## Project Overview
+Planning workspace for Daniel's home media setup. Notes-only — **no code, no infra-as-code, no automation scripts**. When something graduates to implementation, it gets its own repo.
 
-<!-- Generated from voice note transcription -->
+## How to work here
 
-**Project Name**: [PROJECT_NAME]
+- Quick, unstructured capture goes in `notes/` — don't over-structure; jot first, organise later.
+- Fleshed-out write-ups go in `docs/ideas/`.
+- Concrete plans, specs, shopping lists, room/rack layouts go in `docs/plans/`.
+- Reference material (manuals, links, product specs, research) goes in `docs/references/`.
+- Voice memos, if used, go in `audio-samples/`; transcripts in `docs/transcripts/{verbatim,cleaned}/`.
 
-**Description**: [Brief description generated from cleaned transcript]
+## When helping Daniel
 
-**Status**: Planning / Early Development
+- Default to producing markdown notes and plans, not code.
+- When he drops a rough idea, help flesh it out into a structured `docs/ideas/<slug>.md` — requirements, options considered, open questions, rough cost/complexity.
+- When he's deciding between options, produce a comparison doc in `docs/plans/`.
+- Keep file names descriptive and `kebab-case.md`.
+- Don't invent product specs — if unsure, mark as `[to confirm]` or put it in open questions.
 
-## Source Materials
+## Out of scope
 
-This project was bootstrapped from voice notes using the [Voice-to-Spec workflow](https://github.com/danielrosehill/Project-Planning-Template).
-
-- **Original voice note**: `audio-samples/[filename].opus`
-- **Verbatim transcript**: `docs/transcripts/verbatim/[filename].md`
-- **Cleaned transcript**: `docs/transcripts/cleaned/[filename].md`
-- **Development spec**: `docs/spec/`
-
-## Key Requirements
-
-<!-- Extracted from cleaned transcript -->
-
-1. [Requirement 1]
-2. [Requirement 2]
-3. [Requirement 3]
-
-## Technical Decisions
-
-<!-- Stack and architecture choices from spec -->
-
-- **Language/Framework**: [TBD]
-- **Database**: [TBD]
-- **Deployment**: [TBD]
-
-## Known Challenges
-
-<!-- Identified during voice note ideation -->
-
-1. [Challenge 1]
-2. [Challenge 2]
-
-## Development Guidelines
-
-When working on this project:
-
-1. Refer to `docs/spec/` for detailed requirements and architecture decisions
-2. The original voice transcripts in `docs/transcripts/` contain raw context and reasoning
-3. Update this CLAUDE.md as the project evolves beyond the initial spec
-
-## Next Steps
-
-<!-- Initial development priorities -->
-
-- [ ] Finalize technology stack
-- [ ] Set up project structure
-- [ ] Implement core functionality
-- [ ] Add tests
+- Writing shell scripts, Python, Ansible, Home Assistant YAML, etc. — those belong in dedicated repos.
+- Any code generation beyond inline config examples needed to document a decision.
