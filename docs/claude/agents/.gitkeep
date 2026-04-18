@@ -1,0 +1,17 @@
+# Custom Agents
+
+Place custom agent definitions here.
+
+Example agent file structure:
+
+```markdown
+# Agent: spec-generator
+
+## Purpose
+Generate development specifications from cleaned transcripts.
+
+## Instructions
+1. Read the cleaned transcript
+2. Extract requirements, challenges, and technical decisions
+3. Populate the docs/spec/ templates
+```

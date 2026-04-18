@@ -1,0 +1,20 @@
+# Custom Commands
+
+Place custom slash command definitions here.
+
+Example command file structure:
+
+```markdown
+# Command: /transcribe
+
+## Description
+Transcribe an audio file using both verbatim and cleaned modes.
+
+## Usage
+/transcribe <audio-file-path>
+
+## Steps
+1. Run transcribe_audio_raw, save to docs/transcripts/verbatim/
+2. Run transcribe_audio, save to docs/transcripts/cleaned/
+3. Report completion with file paths
+```
